@@ -1,0 +1,6 @@
+
+T	java:S106"9Replace this use of System.out or System.err by a logger.(óëæl8óÛÆ§…1
+R
+java:S2446"0"notify" may not wake up the appropriate thread.(à¨âçþÿÿÿÿ8¸ÖÜ§…1
+W
+java:S2274":Remove this call to "wait" or move it into a "while" loop.(‘Õúž8ËÒ×§…1
