@@ -1,14 +1,13 @@
 package com.srvenient;
 
-import com.srvenient.number.EvenNumber;
-import com.srvenient.number.OddNumber;
+import com.srvenient.number.Sequential;
 
 public class Main {
-    public static final Object LOCK = new Object();
-
     public static void main(String[] args) {
-        final var one = new Thread(new EvenNumber());
-        final var two = new Thread(new OddNumber());
+        final var sequential = new Sequential(10);
+
+        final var one = new Thread(sequential.execute(Sequential.NumberType.EVEN));
+        final var two = new Thread(sequential.execute(Sequential.NumberType.ODD));
 
         one.start();
         two.start();
